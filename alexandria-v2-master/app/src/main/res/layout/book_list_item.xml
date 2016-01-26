@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/fullBookCover"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/hint_book_cover"
+                android:background="@color/color_book_cover_background"/>
+
+            <TextView
+                android:id="@+id/noBookCoverInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/info_no_book_cover"/>
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/listBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:minLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            tools:text="Splinter Cell"/>
+
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="12sp"
+            tools:text="Tom Clancy"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
